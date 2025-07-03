@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #3c3cd3;
+    /* background-color: #4040c7; */
+    color: white;
+    height: 60px;
+}
+
+.image-blender {
+    width: 40px;
+}
+
+.image-blend {
+    width: 150px;
+}
+
+.tog {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    /* background-color: transparent !important; */
+}
+
+.d-block {
+    width: 100%;
+
+}
+
+.sect {
+    background-color: #3c3cd3;
+
+}
+
+.yoo{
+    margin-bottom: 170px;
+}
+
+.about {
+    width: 300px;
+    max-width: 80%;
+    border-radius: 100%;
+    margin-top: -150px;
+}
+
+.project{
+    background-color: white;
+    border: 3px solid #3c3cd3;
+}
+
+.nav-btn{
+    width: 130px;
+    height: 40px;
+}
+
+.nav-btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.code{
+    background-color: blue;
+}
