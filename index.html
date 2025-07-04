@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
@@ -34,10 +35,10 @@
                 <div class="offcanvas-body pt-3 fw-bold">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-3 ">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About Us</a>
+                            <a class="nav-link text-white" href="#About Us">About Us</a>
                         </li>
                         <li class="nav-item dropdown mb-4">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
@@ -50,21 +51,24 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">oyebodes19@gmail.com</a>
+                                    <a class="dropdown-item" href="#contactForm" onclick="myEmail()">oyebodes19@gmail.com</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://mail.google.com" target="_blank">   </a>
+                                    <a class="dropdown-item" href="https://mail.google.com" target="_blank"> </a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                     <form class="pb-3 gap-lg-3 gap-3 row ms-lg-0 ms-2" style="width: 400px;" role="search">
-                        <button class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-lg-5 " type="button">
+                        <button class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-lg-4 "
+                            type="button">
                             MY PROJECT
-                        </button> <button class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-lg-5" type="button">
+                        </button> <button
+                            class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-lg-4"
+                            type="button">
                             MY DESIGN
                         </button>
                     </form>
@@ -73,11 +77,11 @@
         </div>
     </nav>
 
-    <section class="yoo">
-        <img src="./image/ChatGPT Image Jun 30, 2025, 03_38_56 PM.png" alt="" class="d-block">
+    <section class="yoo" id="Home">
+        <img src="./image/clint-patterson-dYEuFB8KQJk-unsplash.jpg" alt="" class="d-block">
     </section>
 
-    <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4">
+    <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4" id="About Us">
         <img src="./image/ChatGPT Image Jun 30, 2025, 03_38_56 PM.png " alt="" class="about">
         <h3 class="fw-bold pb-3">ABOUT US</h3>
         <p>Hi, I'm Samuel Oyebode, a passionate cybersecurity student at SQI College of ICT with a strong creative side
@@ -97,7 +101,7 @@
         to the work.</p>
     </section>
 
-    <section class="project w-75 rounded-4 mx-auto my-5 pt-lg-1 pb-lg-5 pb-4 pt-3  ">
+    <section class="project w-75 rounded-4 mx-auto my-5 pt-lg-1 pb-lg-4 pb-4 pt-3  ">
         <h3 class="fw-bold pb-4 pt-3 text-center"> MY PROJECT</h3>
         <div class="row  mx-auto g-4 ">
             <div class="col-lg-3 col-12 col-md-6">
@@ -115,7 +119,8 @@
                     <img src="./image/Screenshot 2025-06-13 112807.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Sign In Page</h5>
-                        <p class="card-text">This is a sign in page where a users just have to login to his/her account with <br> e-mail and password after you have successfully create your account</p>
+                        <p class="card-text">This is a sign in page where a users just have to login to his/her account
+                            with <br> e-mail and password after you have successfully create your account</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +129,8 @@
                     <img src="./image/Screenshot 2025-06-13 112137.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">The Dashboard</h5>
-                        <p class="card-text">This is my Google Keep dashboard where a user can add a note with images, it also has the features to edit and delete too</p>
+                        <p class="card-text">This is my Google Keep dashboard where a user can add a note with images,
+                            it also has the features to edit and delete too</p>
                     </div>
                 </div>
             </div>
@@ -133,15 +139,28 @@
                     <img src="./image/Screenshot 2025-06-13 112154.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">The Local Storage</h5>
-                        <p class="card-text">This is my local storage where all the user's information are being stored or saved, both the note and image are saved too.</p>
+                        <p class="card-text">This is my local storage where all the user's information are being stored
+                            or saved, both the note and image are saved too.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-             <button class="btn code"><a href="https://github.com/JUNIOR-SAM/JAVASCRIPT-PROJECT.git" style="text-decoration: none;">Check the Code here</a> </button> 
+        <div class="text-center mt-3 ">
+            <a href="https://junior-sam.github.io/JAVASCRIPT-PROJECT/"><button class="btn bg-primary mt-3 text-black fw-bold" type="button">Check the page here <img src="./image/arrow_forward_50dp_EFEFEF_FILL0_wght400_GRAD0_opsz48.png" alt="" style="width: 25px;"> </button></a> 
         </div>
     </section>
-</body>
 
+    <section  class="email col-lg-4 col-9 pt-5 pb-4 bg-primary rounded-5 mx-auto mb-4 my" id="form">
+        <form id="contactForm" action="https://formsubmit.co/oyebodes19@gmail.com" method="POST" class="col-12 text-center">
+            <input id="names" type="text" name="name" placeholder="Your Name"   class="col-10"><br><br>
+            <input id="email" type="email" name="email" placeholder="Your Email"   class="col-10"><br><br>
+            <textarea id="message" name="message" placeholder="Your Message"  class="col-10"></textarea><br><br>
+            <button class="e-btn col-10"  type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    
+</body>
+<script src="script.js"></script>
 </html>
