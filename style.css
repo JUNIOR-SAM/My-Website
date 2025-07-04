@@ -17,6 +17,8 @@ body {
     height: 60px;
 }
 
+
+
 .image-blender {
     width: 40px;
 }
@@ -44,6 +46,19 @@ body {
 
 .yoo{
     margin-bottom: 170px;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)) ,url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    /* background: url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg), linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.932)); */
+    background-size: cover;
+    background-position: center;
+    /* min-height: 400px; */
+    height: 100vh;
+}
+
+.yoo p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 100px;
 }
 
 .about {
@@ -116,7 +131,7 @@ textarea{
     flex-direction: column;
     width: 85%;
     max-width: 500px;
-    /* display: none; */
+    display: none;
     gap: 1rem;
     border: 1.5px solid rgb(255, 255, 255);
     padding: 20px;
@@ -124,4 +139,13 @@ textarea{
     border-radius: 10px;
     position: fixed;
     background-color: black;
+}
+
+.what{
+    width: 100px;
+    position: fixed;
+    top: 800px;
+    top: 85%;
+    right: 0px;
+    cursor: pointer;
 }
