@@ -39,19 +39,33 @@ body {
 
 }
 
+
 .sect {
     background-color: #3c3cd3;
 
 }
 
-.yoo{
-    margin-bottom: 170px;
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)) ,url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+.yoo {
+    margin-bottom: 150px;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)), url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
     /* background: url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg), linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.932)); */
     background-size: cover;
     background-position: center;
     /* min-height: 400px; */
     height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .yoo {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .yoo {
+        height: 60vh;
+        /* or adjust to your preference */
+    }
 }
 
 .yoo p {
@@ -68,61 +82,74 @@ body {
     margin-top: -150px;
 }
 
-.project{
+.project {
     background-color: white;
     border: 3px solid #3c3cd3;
 }
 
-.nav-btn{
-    width: 130px;
+.nav-btn {
+    /* width: 130px; */
     height: 40px;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
     background-color: white;
     color: black;
     font-weight: bold;
 }
 
-.code{
+.code {
     background-color: blue;
 }
 
-.email{
+.email {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(135deg, blue, gold)  ;
+    background: linear-gradient(135deg, blue, gold);
 }
 
-input{
+input {
     height: 40px;
     padding-left: 10px;
     border-radius: 7px;
     border: none;
+    outline: none;
 }
 
-textarea{
-    height: 100px;
+textarea {
+    height: 150px;
     padding-left: 15px;
     padding-top: 5px;
     border-radius: 7px;
     border: none;
+    outline: none;
 }
 
-.e-btn{
+.e-btn {
     background-color: #3c3cd3;
     height: 40px;
     border-radius: 5px;
     border: none;
+    color: white;
+    font-weight: bold;
 }
 
-::placeholder{
+.f-btn {
+    background-color: red;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder {
     color: black;
     font-style: italic;
 }
 
-.my{
+.my {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,7 +157,8 @@ textarea{
     display: flex;
     flex-direction: column;
     width: 85%;
-    max-width: 500px;
+    max-width: 1000px;
+    height: 500px;
     display: none;
     gap: 1rem;
     border: 1.5px solid rgb(255, 255, 255);
@@ -141,11 +169,12 @@ textarea{
     background-color: black;
 }
 
-.what{
+.what {
     width: 100px;
     position: fixed;
     top: 800px;
     top: 85%;
-    right: 0px;
-    cursor: pointer;
+    right: 10px;
+    cursor: pointer;;
+    border-radius: 50px;
 }
