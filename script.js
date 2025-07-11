@@ -13,4 +13,8 @@ const exitEmail = () => {
 //         alert("Please fill all the fields");
 //         return;
 //     }
-// }
+
+      const name =yourName.value.trim
+
+
+

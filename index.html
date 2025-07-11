@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar text-white fixed-top navbar-expand-lg ">
+    <nav class="navbar text-white fixed-top navbar-expand-lg border border-bottom border-black border-5 ">
         <div class="container-fluid">
             <a class="navbar-brand text-white " href="#"><img src="image/sam.png" alt=""
                     class="image-blender mx-lg-4 mx-2 mx-md-5" /><img src="image/logo word 2.png" alt=""
@@ -45,7 +45,9 @@
                                 Contact Us
                             </a>
                             <ul class="dropdown-menu text-white">
-                                <li><a class="dropdown-item" href="#">+2349030030518</a></li>
+                                <li><a href="tel:+2349030030518" class="call-btn ps-5" style="text-decoration: none;">
+                                        📞 Call Me
+                                    </a></li>
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
@@ -57,7 +59,7 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" target="_blank"> juniorayomide@777 </a>
+                                    <a class="dropdown-item" target="_blank"> juniorayomide777@gmail.com </a>
                                 </li>
                             </ul>
                         </li>
@@ -65,9 +67,11 @@
                     <form
                         class="d-flex mt-lg-1  col-lg-5 col-12 row gap-3 ps-lg-5 ps-0 justify-content-end  me-lg-1 me-0  gap-lg-3 "
                         role="search">
-                        <button class="btn btn-outline-light border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
+                        <button
+                            class="btn btn-outline-light border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
                             style="font-size: 13px;">MY PROJECT</button>
-                        <button class="btn btn-outline-light  border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
+                        <button
+                            class="btn btn-outline-light  border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
                             style="font-size: 13px;">MY DESIGN</button>
                     </form>
                     <!-- <form class="pb-3 gap-lg-3 gap-3 row  mt-1  border border-danger col-lg-3 col-12 col-md-12 ms-3"
@@ -103,7 +107,7 @@
 
     <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4" id="About Us">
         <img src="./image/ChatGPT Image Jun 30, 2025, 03_38_56 PM.png " alt="" class="about">
-        <h3 class="fw-bold pb-3">ABOUT US</h3>
+        <h3 class="fw-bold pb-3 pt-2">ABOUT US</h3>
         <p>Hi, I'm Samuel Oyebode, a passionate cybersecurity student at SQI College of ICT with a strong creative side
             as a graphic designer. I love blending the precision of tech with the freedom of design—whether I’m securing
             networks or crafting bold, user-friendly visuals.
@@ -174,21 +178,81 @@
         </div>
     </section>
 
-    <section class="email  pt-5 pb-4 bg-primary rounded-5 mx-auto mb-4 my" id="form">
-        <form action="https://formsubmit.co/oyebodes19@gmail.com" method="POST" class="col-12 text-center"
+    <section class="email  pt-5 pb-4  rounded-5 mx-auto mb-4 my" id="form">
+        <form id="contactForm" action="https://formsubmit.co/oyebodes19@gmail.com" method="POST" class="col-12 text-center"
             enctype="multipart/form-data">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://my-website-five-amber.vercel.app/thankyou.html">
-            <input type="text"  id="text" placeholder="Your Name" class="col-10"><br><br>
+            <input type="text" id="text" placeholder="Your Name" class="col-10"><br><br>
             <input type="email" id="email" placeholder="Your Email" class="col-10"><br><br>
-            <input type="file" id="image"  accept="image/png, image/jpeg">
+            <input type="file" id="image" accept="image/png, image/jpeg">
             <textarea id="message" name="message" placeholder="Your Message" class="col-10"></textarea><br><br>
-            <div class="row d-flex justify-content-center gap-3"><button class="e-btn col-7" type="submit" onclick="allowEmail()">Send
+            <div class="row d-flex justify-content-center gap-3"><button class="e-btn col-7" type="submit"
+                    onclick="allowEmail()">Send
                     Message</button>
                 <button class="f-btn col-3" type="button" onclick="exitEmail()">Cancel</button>
             </div>
         </form>
+    </section>
+
+    <section class="project w-75 rounded-4 mx-auto my-5 pt-lg-1 pb-lg-4 pb-4 pt-3  mt-lg-5">
+        <h3 class="fw-bold pb-4 pt-3 text-center"> SKILLS ACQUIRED</h3>
+        <div class="row  mx-auto g-4 ">
+            <div class="col-lg-3 col-12 col-md-6">
+                <div class="card border-black border-2 py-2 px-2">
+                    <div style="background-color:  #3c3cd3;" class="d-flex justify-content-center rounded-3"><img
+                            src="./image/COLOURBOX22834162-removebg-preview.png" class="card-img-top" alt="..."
+                            style="width: 170px; height: 170px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center fst-italic ">CODING</h5>
+                        <p class="card-text">This is a sign up page for my project where a user who doesn't have an
+                            account before will sign up to have a personal account for the Google Keep</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6">
+                <div class="card  border-black border-2 py-2 px-2">
+                    <div style="background-color:  #3c3cd3;" class="d-flex justify-content-center rounded-3"><img
+                            src="./image/Admin-icon.png" class="card-img-top" alt="..."
+                            style="width: 170px; height: 170px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">NETWORK ADMINISTRATOR</h5>
+                        <p class="card-text">This is a sign in page where a users just have to login to his/her account
+                            with <br> e-mail and password after you have successfully create your account</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6">
+                <div class="card  border-black border-2 py-2 px-2">
+                    <div style="background-color:  #3c3cd3;" class="d-flex justify-content-center rounded-3"><img
+                            src="./image/icons8-color-mode.gif" class="card-img-top" alt="..."
+                            style="width: 170px; height: 170px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">GRAPHICS DESIGN</h5>
+                        <p class="card-text">This is my Google Keep dashboard where a user can add a note with images,
+                            it also has the features to edit and delete too</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-12 col-md-6">
+                <div class="card  border-black border-2 py-2 px-2">
+                    <img src="./image/Screenshot 2025-06-13 112154.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">The Local Storage</h5>
+                        <p class="card-text">This is my local storage where all the user's information are being stored
+                            or saved, both the note and image are saved too.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="text-center mt-3 ">
+            <a href="https://junior-sam.github.io/JAVASCRIPT-PROJECT/"><button
+                    class="btn  text-white mt-3 text-black fw-bold col-8 col-lg-4 "
+                    style="font-size: 14px; background-color:  #3c3cd3;" type="button">Check the page here <img
+                        src="./image/arrow_forward_50dp_EFEFEF_FILL0_wght400_GRAD0_opsz48.png" alt=""
+                        style="width: 25px;" class="ms-3"> </button></a>
+        </div>
     </section>
 
 
