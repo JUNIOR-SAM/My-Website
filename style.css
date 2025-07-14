@@ -14,7 +14,7 @@ body {
     background-color: #3c3cd3;
     /* background-color: #4040c7; */
     color: white;
-    height: 70px;
+    height: 65px;
 }
 
 
@@ -170,11 +170,25 @@ textarea {
 
 .what {
     width: 100px;
+    cursor: pointer;;
+    border-radius: 50px;
+}
+
+.app{
     position: fixed;
     top: 800px;
     top: 85%;
-    right: -18px;
-    cursor: pointer;;
-    border-radius: 50px;
+    right: 1px;
+    text-decoration: none;
     z-index: 9999;
+}
+
+.need{
+    background-color: green;
+    padding-top: 10px;
+    height: 35px;
+    margin-top: 35px;
+    font-size: 11px;
+    margin-right: -20px;
+    border-radius: 7px;
 }

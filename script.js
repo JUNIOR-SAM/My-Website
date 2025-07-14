@@ -14,7 +14,5 @@ const exitEmail = () => {
 //         return;
 //     }
 
-      const name =yourName.value.trim
-
 
 

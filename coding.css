@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #3c3cd3;
+    /* background-color: #4040c7; */
+    color: white;
+    height: 65px;
+}
+
+.image-blender {
+    width: 40px;
+}
+
+.image-blend {
+    width: 150px;
+}
+.nav-btn {
+    height: 40px;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.my {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1000px;
+    height: 500px;
+    display: none;
+    gap: 1rem;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 10px yellow;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.582), gold);
+    z-index: 10000;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+input {
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.e-btn {
+    background-color: #3c3cd3;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.f-btn {
+    background-color: red;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+    font-style: italic;
+}
+
+.what {
+    width: 100px;
+    position: fixed;
+    top: 800px;
+    top: 85%;
+    right: -18px;
+    cursor: pointer;;
+    border-radius: 50px;
+    z-index: 9999;
+}
+
