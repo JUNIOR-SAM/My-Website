@@ -115,18 +115,18 @@
         <div class="row  mx-auto ">
             <div class="col-lg-4 col-12 col-md-6">
                 <div class="card border-black border-2 py-2 px-2">
-                    <video id="myVideo">
+                    <video id="myVideo1">
                         <source src="image/first.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="row  mt-3 d-flex justify-content-center video">
-                        <button onclick="playVideo()" class="col-3  play">Play</button>
-                        <button onclick="pauseVideo()" class="col-3  play">Pause</button>
+                    <div class="row mt-3 d-flex justify-content-center video">
+                        <button onclick="playVideo('myVideo1')" class="col-3 play">Play</button>
+                        <button onclick="pauseVideo('myVideo1')" class="col-3 play">Pause</button>
                     </div>
                     <div class="card-body ">
                         <h5 class="card-title text-center">SAM CART</h5>
                         <p class="card-text ">This is a web page related to adding of items to cart resembling of
-                            E-commerce website or appliocation like JUMIA.... <br> <a
+                            E-commerce website or application like JUMIA.... <br> <a
                                 href="https://junior-sam.github.io/Cart-Replicate/" class="lik">Check it out.....</a>
                         </p>
                     </div>
@@ -134,11 +134,13 @@
             </div>
             <div class="col-lg-4 col-12 col-md-6 mt-lg-0 mt-5">
                 <div class="card  border-black border-2 py-2 px-2">
-                    <video id="myVideo">
-                        <source src="image/first.mp4" type="video/mp4"></video>
-                    <div class="row  mt-3 d-flex justify-content-center video">
-                        <button onclick="playVideo()" class="col-3  play">Play</button>
-                        <button onclick="pauseVideo()" class="col-3  play">Pause</button>
+                    <video id="myVideo2">
+                        <source src="image/first.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="row mt-3 d-flex justify-content-center video">
+                        <button onclick="playVideo('myVideo2')" class="col-3 play">Play</button>
+                        <button onclick="pauseVideo('myVideo2')" class="col-3 play">Pause</button>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">LOOPING SYSTEM</h5>
@@ -288,6 +290,13 @@
                 preview.style.display = 'none';
             }
         });
+
+        function playVideo(id) {
+            document.getElementById(id).play();
+        }
+        function pauseVideo(id) {
+            document.getElementById(id).pause();
+        }
     </script>
 
 </body>
