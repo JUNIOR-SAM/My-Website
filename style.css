@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
@@ -27,14 +29,12 @@ body {
     width: 150px;
 }
 
-.tog {
+/* .tog {
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
     /* background-color: transparent !important; */
-}
-
-.d-block {
+*/ .d-block {
     width: 100%;
 
 }
@@ -42,7 +42,39 @@ body {
 
 .sect {
     background-color: #3c3cd3;
+    position: relative;
+    /* overflow: hidden; */
+}
 
+/* .sect:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+    transition: all 5.5s ease-in-out;
+} */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: #3c3cd3;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 2;
+    font-size: 1.0rem;
+    text-align: center;
+    padding: 20px;
+    /* border-radius: 20px; */
+}
+
+.sect:hover .card-overlay {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .yoo {
@@ -57,7 +89,7 @@ body {
 
 @media (max-width: 768px) {
     .yoo {
-        height: 40vh;
+        height: 50vh;
     }
 }
 
@@ -99,13 +131,13 @@ body {
 }
 
 .code {
-    background-color:  #3c3cd3;
+    background-color: #3c3cd3;
 }
 
 .email {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 input {
@@ -164,17 +196,18 @@ textarea {
     padding: 20px;
     box-shadow: 0px 0px 10px yellow;
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba(0, 0, 255, 0.582), gold);
+    background: linear-gradient(200deg, blue, gold);
     z-index: 10000;
 }
 
 .what {
     width: 100px;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
     border-radius: 50px;
 }
 
-.app{
+.app {
     position: fixed;
     top: 800px;
     top: 85%;
@@ -183,7 +216,7 @@ textarea {
     z-index: 9999;
 }
 
-.need{
+.need {
     background-color: green;
     padding-top: 10px;
     height: 35px;

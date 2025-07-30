@@ -1,6 +1,6 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,10 @@ body {
     /* background-color: #4040c7; */
     color: white;
     height: 65px;
+    margin-bottom: 300px;
 }
+
+
 
 .image-blender {
     width: 40px;
@@ -24,7 +27,65 @@ body {
 .image-blend {
     width: 150px;
 }
+
+.tog {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    /* background-color: transparent !important; */
+}
+
+.d-block {
+    width: 100%;
+
+}
+
+
+.sect {
+    background-color: #3c3cd3;
+
+}
+
+.yoo {
+    margin-bottom: 150px;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)), url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    /* background: url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg), linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.932)); */
+    background-size: cover;
+    background-position: center;
+    /* min-height: 400px; */
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .yoo {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .yoo {
+        height: 60vh;
+        /* or adjust to your preference */
+    }
+}
+
+.yoo p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.about {
+    width: 300px;
+    max-width: 80%;
+    border-radius: 100%;
+    margin-top: -150px;
+}
+
+
 .nav-btn {
+    /* width: 130px; */
     height: 40px;
 }
 
@@ -34,24 +95,8 @@ body {
     font-weight: bold;
 }
 
-.my {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    max-width: 1000px;
-    height: 500px;
-    display: none;
-    gap: 1rem;
-    border: 1.5px solid rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 0px 0px 10px yellow;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(0, 0, 255, 0.582), gold);
-    z-index: 10000;
+.code {
+    background-color:  #3c3cd3;
 }
 
 .email {
@@ -100,14 +145,74 @@ textarea {
     font-style: italic;
 }
 
+.my {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1000px;
+    height: 500px;
+    display: none;
+    gap: 1rem;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 10px yellow;
+    border-radius: 10px;
+    background: linear-gradient(200deg, blue, gold);
+    z-index: 10000;
+}
+
 .what {
     width: 100px;
+    cursor: pointer;;
+    border-radius: 50px;
+}
+
+.app{
     position: fixed;
     top: 800px;
     top: 85%;
-    right: -18px;
-    cursor: pointer;;
-    border-radius: 50px;
+    right: 1px;
+    text-decoration: none;
     z-index: 9999;
 }
 
+.need{
+    background-color: green;
+    padding-top: 10px;
+    height: 35px;
+    margin-top: 35px;
+    font-size: 11px;
+    margin-right: -20px;
+    border-radius: 7px;
+}
+
+.project {
+    background-color: white;
+    border: 3px solid #3c3cd3;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.play{
+    background-color: #3c3cd3;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.lik{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
